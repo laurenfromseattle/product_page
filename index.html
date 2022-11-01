@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Trapper Keeper</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta name="author" content="Lauren Tucker" />
+        <meta
+            name="description"
+            content="The coolest organizational system this side of the 80s. It's the Original Trapper Keeper, now featuring rad new styles for the modern student."
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header id="header" class="header">
+            <nav id="nav-bar" class="nav">
+                <ul class="nav__menu">
+                    <li class="header__logo">
+                        <a href="#"
+                            ><img
+                                id="header-img"
+                                src="img/trapper-keeper-logo.svg"
+                                alt="Trapper Keeper logo"
+                        /></a>
+                    </li>
+                    <li><a class="nav-link" href="#history">History</a></li>
+                    <li><a class="nav-link" href="#designs">Designs</a></li>
+                    <li><a class="nav-link" href="#fanclub">Fanclub</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <img
+                    class="hero__img"
+                    src="img/girl-jumping-white-rainbow.svg"
+                />
+                <div class="hero__text">
+                    <span>Are</span>
+                    <span>You</span>
+                    <span>A</span>
+                    <span>Keeper</span>
+                    <span>?</span>
+                    <h1>
+                        <a class="button hero__button" href="#fanclub"
+                            >Join the TK Fanclub</a
+                        >
+                    </h1>
+                </div>
+            </section>
+            <section id="history" class="section">
+                <h2 class="section__heading">Time for a history lesson</h2>
+                <p>
+                    Trapper Keeper has been keeping binder organization fresh
+                    and funky since the late 70s. Watch the video to learn more
+                    about our history.
+                </p>
+                <iframe
+                    id="video"
+                    src="https://www.youtube.com/embed/4Tx7OxOMPrY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <ul>
+                    <li>
+                        With three different design lines to choose from,
+                        you'll be sure to fit in (or NOT!) with your preferred
+                        clique.
+                    </li>
+                    <li>
+                        Five subject folders for all your papers and an inside
+                        pocket for all your junk, now that's studying smart.
+                    </li>
+                    <li>
+                        The 'rents will be thrilled to discover that it doesn't
+                        cost an arm and a leg. Just a finger!
+                    </li>
+                </ul>
+            </section>
+            <section id="designs" class="section">
+                <h2 class="section__heading">Three rad design lines</h2>
+                <p>
+                    Let your personality shine through in class by selecting a
+                    Trapper Keeper from one of our three exclusive design
+                    lines: Lisa Frank, Fast Cars and Skate Life.
+                </p>
+                <div class="tiles">
+                    <div class="tile">
+                        <div
+                            class="tile__bgframe tile__bgframe--triangle"
+                        ></div>
+                        <h3 class="tile__heading">Lisa Frank</h3>
+                        <figure class="tile__figure">
+                            <img
+                                alt="Happy seal by artist Lisa Frank"
+                                src="img/lisa-frank-seal.webp"
+                                height="468"
+                                width="842"
+                            />
+                            <figcaption class="tile__figure-caption offscreen">
+                                Lisa Frank styles put the cool in school!
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="tile">
+                        <div class="tile__bgframe tile__bgframe--circle"></div>
+                        <h3 class="tile__heading">Fast Cars</h3>
+                        <figure class="tile__figure">
+                            <img
+                                class="tile__figure-img"
+                                alt="Lamborghini with suicide doors"
+                                src="img/retro-lambo.jpg"
+                                height="480"
+                                width="600"
+                            />
+                            <figcaption class="tile__figure-caption offscreen">
+                                You don't need a license to drive these styles!
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="tile">
+                        <div class="tile__bgframe tile__bgframe--square"></div>
+                        <h3 class="tile__heading">Skate Life</h3>
+                        <figure class="tile__figure">
+                            <img
+                                class="tile__figure-img"
+                                alt="Girl grinding on a skateboard"
+                                src="img/skate-girl.jpg"
+                                height="450"
+                                width="600"
+                            />
+                            <figcaption class="tile__figure-caption offscreen">
+                                Flip and kick these bodacious styles!
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section id="fanclub" class="section">
+                <h2 class="section__heading">Join the TK Fanclub</h2>
+                <form
+                    id="form"
+                    class="form"
+                    action="https://www.freecodecamp.com/email-submit"
+                    method="post"
+                >
+                    <fieldset>
+                        <legend>
+                            <h3 class="section__subheading">
+                                Send me free stuff!
+                            </h3>
+                        </legend>
+                        <label for="firstName">First Name:</label>
+                        <input
+                            id="firstName"
+                            class="form__input"
+                            type="text"
+                            name="firstName"
+                        />
+                        <label for="lastName">Last Name:</label>
+                        <input
+                            id="lastName"
+                            class="form__input"
+                            type="text"
+                            name="lastName"
+                        />
+                        <label for="email">Email:</label>
+                        <input
+                            id="email"
+                            class="form__input"
+                            type="email"
+                            placeholder="email@example.com"
+                            name="email"
+                        />
+                        <input
+                            id="submit"
+                            class="button"
+                            type="submit"
+                            value="Join the Club"
+                        />
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer id="footer" class="footer">
+            <p>&copy; 2022 Lauren Tucker</p>
+        </footer>
+    </body>
+</html>
